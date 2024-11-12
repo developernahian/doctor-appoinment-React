@@ -71,9 +71,10 @@ const MyProfile = () => {
               : <p className="text-gray-400">{userData.gender}</p>
           }
 
+
+
+
           <p className="font-medium">Birthday:</p>
-
-
 
           {
             isEdit
