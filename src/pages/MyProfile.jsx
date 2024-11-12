@@ -20,7 +20,7 @@ const MyProfile = () => {
   const [isEdit, setIsEdit] = useState(false)
 
   return (
-    <div className="max-w-lg flex flex-col gap-2 text-sm ">
+    <div className="max-w-lg flex flex-col gap-2 text-sm mt-5">
       <img className="w-36 rounded" src={userData.image} alt="img" />
       {
         isEdit
@@ -72,11 +72,16 @@ const MyProfile = () => {
           }
 
           <p className="font-medium">Birthday:</p>
+
+
+
           {
-            isEdit 
-            ? <input className="max-w-28 bg-gray-100" type="date" onChange={(e) => setUserData(prev => ({ ...prev, dob: e.target.value }))} value={userData.dob} />
-            : <p className="text-gray-400">{userData.dob}</p>
+            isEdit
+              ? <input className="max-w-28 bg-gray-100" type="date" onChange={(e) => setUserData(prev => ({ ...prev, dob: e.target.value }))} value={userData.dob} />
+              : <p className="text-gray-400">{userData.dob}</p>
           }
+
+
 
         </div>
       </div>
@@ -84,8 +89,8 @@ const MyProfile = () => {
       <div className="mt-10">
         {
           isEdit
-          ? <button className="border border-primary px-8 py-2 rounded-full hover:bg-primary hover:text-white transition-all" onClick={() => setIsEdit(false)}>Save information</button>
-          : <button className="border border-primary px-8 py-2 rounded-full hover:bg-primary hover:text-white transition-all" onClick={() => setIsEdit(true)}>Edit</button>
+            ? <button className="border border-primary px-8 py-2 rounded-full hover:bg-primary hover:text-white transition-all" onClick={() => setIsEdit(false)}>Save information</button>
+            : <button className="border border-primary px-8 py-2 rounded-full hover:bg-primary hover:text-white transition-all" onClick={() => setIsEdit(true)}>Edit</button>
         }
       </div>
 
@@ -95,3 +100,4 @@ const MyProfile = () => {
 }
 
 export default MyProfile
+
