@@ -6,6 +6,6 @@
 ---
 <img src="./README-ASSETS/output-doctor-details.png" alt="">
 ---
-<img src="./README-ASSETS/output-login.png" alt="">
----
 <img src="./README-ASSETS/output-profile.png" alt="">
+---
+<img src="./README-ASSETS/output-login.png" alt="">
